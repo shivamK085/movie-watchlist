@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    /* border: 2px dashed palegreen; */
+}
+
+main {
+    width: 100%;
+    max-width: 560px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 206px;
+    background: url(main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -160px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* 70% black overlay */
+}
+
+
+div#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 0 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    transform: translateY(-23px);
+    width: 462px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    overflow: hidden;
+    /* padding: 11px; */
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(215, 214, 214);
+}
+
+div#icon-input-container {
+    display: flex;
+    align-items: stretch;
+    /* padding: 11px 15px; */
+    gap: 4px;
+    flex: 1;
+    border-right: 1px solid lightgrey;
+    /* border: 1px solid green; */
+}
+
+div#icon-input-container>img {
+    margin: 11px 0 11px 15px;
+    width: 16px;
+    height: 16px;
+}
+
+div#icon-input-container>input {
+    font-size: 1rem;
+    border: none;
+    flex: 1;
+    cursor: pointer;
+    color: #807e7e;
+}
+
+div#icon-input-container>input:focus {
+    border: none;
+}
+
+form>button {
+    background-color: rgb(247, 247, 247);
+    padding: 9px 35px;
+    font-size: 1rem;
+    width: 120px;
+    border: none;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+label {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    background-color: white;
+    flex: 1;
+    font-size: 16px;
+}
+
+section>p {
+    color: #DFDDDD;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+img#film-strip-icon {
+    width: 70px;
+    height: 62px;
+}
+
+
+.movie-card {
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    /* max-width: 500px; */
+    border-bottom: 1px solid #DFDDDD;
+}
+
+.poster-img {
+    width: 99px;
+    height: 147px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.movie-meta h2 {
+    /* margin-top: 9px; */
+    max-width: 290px;
+    margin-right: 9px;
+    display: inline-block;
+    font-size: 1.125rem;
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+}
+
+.movie-meta{
+    font-size: 0.8rem;
+}
+
+.movie-meta p{
+    color: #6B7280;
+}
+
+img.star-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+div.movie-meta-inner{
+    display: flex;
+    gap: 21px;
+}
+
+.movie-meta-inner span,
+.movie-meta-inner button{
+    color: #111827;
+}
+
+
+.watchlist-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.watchlist-btn{
+    display: flex;
+    gap: 0.3rem;
+    margin: 0;
+    background-color: white;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+p#error-msg{
+    width: 350px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a#home-page-link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
