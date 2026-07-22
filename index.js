@@ -21,7 +21,7 @@ async function fetchMovieCardData(title, year) {
     }
 
 
-    const res = await fetch(`http://www.omdbapi.com/?apikey=f9535359&t=${queryStrTitle}&y=${year}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=f9535359&t=${queryStrTitle}&y=${year}`)
     const data = await res.json()
 
     // console.log(data)
@@ -75,7 +75,7 @@ async function fetchMovieNameList(moveiName) {
 
     if (!queryStrTitle) return
 
-    const res = await fetch(`http://www.omdbapi.com/?apikey=f9535359&s=${queryStrTitle}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=f9535359&s=${queryStrTitle}`)
     const data = await res.json()
 
     // console.log(data)
@@ -140,7 +140,7 @@ document.addEventListener('click', async function(e){
     }
 
 
-    const res = await fetch(`http://www.omdbapi.com/?apikey=f9535359&i=${movieId}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=f9535359&i=${movieId}`)
     const data = await res.json()
 
     
