@@ -101,6 +101,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
     const movieName = searchInput.value
     searchInput.value = "" // replace with searchInput.value
     fetchMovieNameList(movieName)
+    searchInput.blur()
 })
 
 // const userData = {
