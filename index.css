@@ -95,10 +95,6 @@ div#icon-input-container>input {
     color: #807e7e;
 }
 
-div#icon-input-container>input:focus {
-    border: none;
-}
-
 form>button {
     background-color: rgb(247, 247, 247);
     padding: 9px 35px;

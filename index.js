@@ -1,6 +1,14 @@
 let movieCardsHtml = ""
 const searchInput = document.getElementById('search-input')
 const movieCards = document.getElementById("movies-container")
+const elements = document.querySelectorAll(".input-focus")
+
+elements.forEach(element => {
+    element.addEventListener("click", () => {
+        console.log("clicked me!")
+        searchInput.focus();
+    })
+})
 
 function renderMovieList() {
     // console.log(movieCardsHtml)
